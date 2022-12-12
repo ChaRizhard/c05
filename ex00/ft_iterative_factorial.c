@@ -9,13 +9,13 @@ int	ft_iterative_factorial(int nb)
 	result = 1;
 	if (nb < 0)
 	{
-		return (0);
+		return(0);
 	}
 	while (++i <= nb)
 	{
 		result *= i;
 	}
-	return (result);
+	return(result);
 }
 /*
 int	main()
