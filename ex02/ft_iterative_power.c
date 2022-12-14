@@ -3,10 +3,8 @@
 int	ft_iterative_power(int nb, int power)
 {
 	int	i;
-	int	n;
 
 	i = 1;
-	n = nb;
 	if (power < 0)
 	{
 		return (0);
@@ -17,20 +15,14 @@ int	ft_iterative_power(int nb, int power)
 	}
 	while (++i <= power)
 	{
-		nb *= n;
+		nb *= i;
 	}
 	return (nb);
 }
 /*
 int	main()
 {
-	int	x;
-	int	y;
-
-	x = 2;
-	y = 2;
-
-	printf("%i\n", ft_iterative_power(x, y));
+	printf("%d\n", ft_iterative_power(2, 2));
 	return (0);
 }
 */

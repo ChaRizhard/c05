@@ -1,32 +1,28 @@
 #include <stdio.h>
 
-int	ft_sqrt_recursion(int nb, int i)
+int	ft_sqrt(int nb)
 {
+	int	i;
+
+	i = 0;
+	if (nb <= 0)
+	{
+		return (0);
+	}
+	while (i * i < nb)
+	{
+		i++;
+	}
 	if (i * i == nb)
 	{
 		return (i);
 	}
-	if (i * i < nb)
-	{
-		return (ft_sqrt_recursion(nb, i + 1));
-	}
-	else
-	{
-		return (0);
-	}
-}
-
-int	ft_sqrt(int nb)
-{
-	return (ft_sqrt_recursion(nb, 0));
+	return(0);
 }
 /*
 int	main()
 {
-	int	nb;
-
-	nb = 16;
-	printf ("%d\n", ft_sqrt(nb));
+	printf ("%d\n", ft_sqrt(16));
 	return (0);
 }
 */
