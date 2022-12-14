@@ -3,8 +3,10 @@
 int	ft_iterative_power(int nb, int power)
 {
 	int	i;
+	int	n;
 
-	i = 1;
+	i = 0;
+	n = 1;
 	if (power < 0)
 	{
 		return (0);
@@ -15,9 +17,9 @@ int	ft_iterative_power(int nb, int power)
 	}
 	while (++i <= power)
 	{
-		nb *= i;
+		n *= nb;
 	}
-	return (nb);
+	return (n);
 }
 /*
 int	main()
